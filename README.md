@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# 🖥️ Flask Blog UI – React Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based frontend for a secure blog platform powered by a Flask + JWT backend. This interface supports user authentication, post creation, and dashboard-style blog management.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔐 Key Features
 
-### `npm start`
+- ✅ User Registration & Login
+- 🔐 JWT-based authentication
+- 📝 Create and View personal blog posts
+- 🚫 Protected routes (My Posts, Create Post)
+- 🚀 Responsive routing using React Router
+- ⚙️ Axios-based API communication
+- 🔄 Logout & session management
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚛️ Tech Stack
 
-### `npm test`
+- **Frontend**: React, React Router DOM, Axios
+- **Backend**: [Flask JWT Blog API](https://github.com/Manjunathrkrishna/flask-blog-api-jwt)
+- **Auth**: JWT (stored in `localStorage`)
+- **API**: RESTful (via Axios)
+- **Dev Tools**: VS Code, Thunder Client, GitHub
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+flask-blog-ui/
+│
+├── src/
+│   ├── components/
+│   │   ├── Login.js
+│   │   ├── Register.js
+│   │   ├── MyPosts.js
+│   │   ├── CreatePost.js
+│   │   └── Navbar.js
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ How to Run the App Locally
 
-### `npm run eject`
+### 🔹 1. Clone the repo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/Manjunathrkrishna/flask-blog-ui.git
+cd flask-blog-ui
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔹 2. Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🔹 3. Start the app
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The app will open at `http://localhost:3000`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📝 Make sure your Flask backend is running at `http://127.0.0.1:5000`
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔗 API Endpoints Used
 
-### Analyzing the Bundle Size
+- `POST /register` – Create new user
+- `POST /login` – Login and get JWT
+- `GET /myposts` – Get user's blog posts
+- `POST /posts` – Create a new post
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🙌 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Developed with ❤️ by **Manjunath R**  
+📧 [mrkrishna6325@gmail.com](mailto:mrkrishna6325@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/manjunath-ramakrishna-14266915a)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 💡 Future Ideas
 
-### Deployment
+- ✏️ Edit / delete posts
+- 🌐 Deploy on Render / Vercel
+- 🔒 Auto token refresh & route guards
+- 🖼️ Add page styling with Tailwind or Material UI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📦 Backend Repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👉 [Flask JWT Blog API (Backend)](https://github.com/Manjunathrkrishna/flask-blog-api-jwt)
