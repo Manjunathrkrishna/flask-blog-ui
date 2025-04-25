@@ -1,106 +1,35 @@
-# ⚛️ React Frontend – Flask Blog Platform
+# ⚛️ React Frontend for Flask Blog API
 
-This is the **React.js frontend** for a secure blog platform powered by a Flask backend. It includes user authentication, protected routes, blog post management, and a clean, functional UI.
+This is the frontend for the Full Stack Blog App built with **React.js**, connected to a Flask backend secured by JWT. It handles user authentication, protected routes, and blog post management.
+
+### 🌍 Live Frontend: [Vercel Deployment](https://flask-blog-ui.vercel.app)
 
 ---
 
-## 🔐 Features
-
-- ✅ User Registration
-- ✅ Login with JWT
-- ✅ Token-based protected routes
-- ✅ Create blog posts
-- ✅ View your own posts
-- ✅ Logout functionality
-- ✅ Simple navigation bar
-- ✅ React Router DOM based routing
+## 🚀 Features
+- User Registration & Login Forms
+- JWT Token stored in localStorage
+- Protected Routes (My Posts, Create Post)
+- Axios for API Integration
+- Simple & Clean UI
+- Deployed on Vercel
 
 ---
 
 ## ⚙️ Tech Stack
-
-- React.js (v18+)
-- Axios
-- React Router DOM
-- Bootstrap (optional styling)
-- LocalStorage (for token handling)
-- Flask (backend API)
+- **Frontend**: React.js, Axios, React Router
+- **State**: useState, useEffect
+- **Deployment**: Vercel
+- **Auth**: JWT (via Flask API)
 
 ---
 
-## 🔗 Related Repositories
-
-- **Backend (Flask API)**: [flask-blog-api-jwt](https://github.com/Manjunathrkrishna/flask-blog-api-jwt)
-
----
-
-## 📁 Folder Structure
-
-```
-flask-blog-ui/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── Login.js
-│   │   ├── Register.js
-│   │   ├── MyPosts.js
-│   │   ├── CreatePost.js
-│   │   └── Navbar.js
-│   ├── App.js
-│   └── index.js
-├── .gitignore
-├── package.json
-```
-
----
-
-## 🛠️ How to Run Locally
-
-### 1. Clone the repo
-
+## 🛠️ Running Locally
 ```bash
 git clone https://github.com/Manjunathrkrishna/flask-blog-ui.git
 cd flask-blog-ui
-```
-
-### 2. Install dependencies
-
-```bash
 npm install
-```
-
-### 3. Start the development server
-
-```bash
 npm start
 ```
 
-> React will run on `http://localhost:3000`
-
----
-
-## 🔌 API Reference
-
-This app connects to the Flask backend running on:
-
-```bash
-http://127.0.0.1:5000
-```
-
-Ensure your Flask backend is running before testing login/register/post features.
-
----
-
-## 🙌 Author
-
-Made with 💙 by **Manjunath R**  
-📧 [mrkrishna6325@gmail.com](mailto:mrkrishna6325@gmail.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/manjunath-ramakrishna-14266915a)
-
----
-
-## ✅ Want to Add Next?
-
-- 🔐 Route protection (redirect if not logged in)
-- ✏️ Edit/Delete posts
-- 🌐 Deployment (Vercel + Render)
+Ensure the backend API is live or update API URLs accordingly.
