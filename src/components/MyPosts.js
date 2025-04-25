@@ -15,7 +15,7 @@ function MyPosts() {
       }
 
       try {
-        const res = await axios.get('http://127.0.0.1:5000/myposts', {
+        const res = await axios.get('https://flask-blog-api-jmhz.onrender.com/myposts', {
           headers: {
             Authorization: `Bearer ${token}`
           }
